@@ -13,12 +13,11 @@ public abstract class Order {
 		this.customer = customer;
 	}
 
-	// Java8からインタフェースでメソッドのデフォルト実装を行えるようになった
 	public abstract void execute();
 
 	@Override
 	public String toString() {
-		return "" + market + "\n" + customer;
+		return "" + customer + "\n" + market;
 
 	}
 

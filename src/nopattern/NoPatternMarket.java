@@ -6,11 +6,15 @@ public class NoPatternMarket {
 
 	public void buy(int quantity, NoPatternCustomer customer) {
 		customer.bought(quantity, getPrice() * quantity);
+		System.out.println("Customer BOUGHT: amount=" + quantity + ", price="
+				+ getPrice() + ", total=" + getPrice() * quantity);
 		changePrice();// 売買が行われたら値段を変更
 	}
 
 	public void sell(int quantity, NoPatternCustomer customer) {
 		customer.sold(quantity, getPrice() * quantity);
+		System.out.println("Customer SOLD: amount=" + quantity + ", price="
+				+ getPrice() + ", total=" + getPrice() * quantity);
 		changePrice();// 売買が行われたら値段を変更
 	}
 
@@ -25,7 +29,7 @@ public class NoPatternMarket {
 
 	@Override
 	public String toString() {
-		return "market price = " + price;
+		return "current market price = " + price;
 	}
 
 }

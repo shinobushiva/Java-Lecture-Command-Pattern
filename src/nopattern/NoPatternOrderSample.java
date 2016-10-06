@@ -27,9 +27,8 @@ public class NoPatternOrderSample {
 	}
 
 	public static void printState(NoPatternCustomer customer, NoPatternMarket market) {
-		System.out.println("==state==");
-		System.out.println(market);
 		System.out.println(customer);
+		System.out.println(market);
 		System.out.println("=========");
 	}
 }
