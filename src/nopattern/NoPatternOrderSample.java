@@ -20,6 +20,10 @@ public class NoPatternOrderSample {
 		int quantity = customer.getQuantity();
 		market.sell(quantity, customer);
 		printState(customer, market);
+		
+		if(market.getPrice() > 100){
+			
+		}
 
 		// 結果表示
 		System.out.println(customer);

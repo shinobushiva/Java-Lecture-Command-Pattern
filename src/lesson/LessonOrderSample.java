@@ -5,10 +5,10 @@ import patterned.Customer;
 import patterned.Market;
 
 /**
- * [課題]BuyMaxOrderとBuyIfLessThanOrderの動作が確認できるように<br>
+ * [課題] BuyMaxOrderとBuyIfLessThanOrderの動作が確認できるように<br>
  * テストプログラムを作成してください
  * 
- *
+ * [発展課題] 独自のオーダーを作成してください<br>
  */
 public class LessonOrderSample {
 
